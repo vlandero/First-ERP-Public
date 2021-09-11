@@ -1,0 +1,117 @@
+.first {
+  margin-top: 77px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.first-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 20px;
+}
+.first-links {
+  display: flex;
+}
+.first-links a {
+  margin: 0 10px;
+  color: black;
+}
+.vl {
+  border-left: 2px solid black;
+  height: 22px;
+}
+.second {
+  display: flex;
+  margin: 60px;
+}
+.second-left {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+.second-left h3 {
+  margin: 0;
+}
+.third {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.third-cifre {
+  display: flex;
+  justify-content: space-between;
+}
+.third-comp {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 200px;
+  margin: 0 20px;
+}
+.fourth {
+  margin: 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.fourth h3 {
+  margin: 30px;
+  align-self: center;
+}
+.fourth hr {
+  margin-top: 0;
+}
+.componente-cheie {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: white;
+  margin: 0 60px;
+}
+.componente-cheie h4 {
+  margin: 0;
+}
+.componente-cheie div {
+  margin: 15px;
+  margin-bottom: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+.componente-cheie div:hover {
+  background-color: rgb(197, 197, 197);
+}
+.comp-cheie-list li {
+  margin: 10px 0;
+}
+.fifth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 20px;
+  margin-top: 50px;
+}
+.text-rnm {
+  max-width: 600px;
+}
+@media screen and (min-width: 700px) {
+  .fourth h3 {
+    align-self: flex-start;
+  }
+}
+@media screen and (min-width: 790px) {
+  .first {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 900px) {
+}
+@media screen and (min-width: 1125px) {
+}

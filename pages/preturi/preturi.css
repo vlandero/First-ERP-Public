@@ -1,0 +1,39 @@
+.preturi-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-preturi {
+  display: flex;
+  margin-top: 30px;
+  width: 75%;
+  justify-content: space-around;
+}
+.set-page-button {
+  background-color: white;
+  transition: background-color 500ms;
+  font-size: 20px;
+  width: 10rem;
+  padding: 7px;
+  cursor: pointer;
+}
+.set-page-button:hover {
+  background-color: rgb(224, 224, 224);
+}
+/* @media screen and (max-width: 900px) {
+  
+} */
+@media screen and (max-width: 790px) {
+  .preturi-page {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .nav-preturi {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+  }
+}

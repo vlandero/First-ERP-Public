@@ -1,0 +1,2 @@
+This is a demo version for the website I'm working at for Pluriva company.
+I published a beautiful responsive navbar, with hover events on desktop and click events on mobile, and two pages that use React State Management
