@@ -101,6 +101,47 @@
 .text-rnm {
   max-width: 600px;
 }
+.sixth {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.acordion-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  align-self: center;
+}
+.acordion-element {
+  background-color: rgb(211, 211, 211);
+  padding: 15px;
+  margin: 5px;
+}
+.acordion-preview {
+  cursor: pointer;
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 10px;
+  margin: 10px 0;
+}
+.acordion-preview h3 {
+  margin: 0;
+}
+.acordion-text {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0, 1, 0, 1);
+}
+.acordion-text.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.4s cubic-bezier(1, 0, 1, 0);
+}
 @media screen and (min-width: 700px) {
   .fourth h3 {
     align-self: flex-start;

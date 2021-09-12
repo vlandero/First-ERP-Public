@@ -13,6 +13,7 @@ import DeclaratiiContabile from './comp-cheie/DeclaratiiContabile'
 import GestiuneaStocurilor from './comp-cheie/GestiuneaStocurilor'
 import RapoarteAnalize from './comp-cheie/RapoarteAnalize'
 import AccesMobil from './comp-cheie/AccesMobil'
+import Acordion from './acordion/template'
 
 
 export default function Homepage() {
@@ -91,6 +92,30 @@ export default function Homepage() {
                 <DeclaratiiContabile isOpen={active} />
                 <GestiuneaStocurilor isOpen={active} />
                 <AccesMobil isOpen={active} />
+                
+            </div>
+            <div className='sixth'>
+                <h2>Ce este FirstERP</h2>
+                <p>First ERP înseamnă modul în care te organizezi eficient pentru a dezvolta afacerea. First ERP reprezintă produsele software de afaceri prin care angajații firmei tale vor lucra mai eficient, pentru îndeplinirea obiectivelor stabilite.</p>
+                <h2 style={{alignSelf:'center',marginTop:60}}>De ce First ERP? Avantaje cheie pentru afacerea ta</h2>
+                <div className='acordion-menu'>
+                    <Acordion title='Controlul afacerii'>Urmărești indicatori cheie ai afacerii și ești anunțat, prin notificări automate, atunci când se întâmplă ceva important cu stocurile, cu achizițiile, cu vânzările sau încasările. Controlul exercitat se referă atât la nivel financiar, cât și operațional.
+                    </Acordion>
+                    <Acordion title='Integrări cheie pentru dezvoltarea afacerii'>eCommerce, curieri, ANAF – First ERP se integrează cu cele mai importante instrumente software de afaceri utilizate de o firmă în România.
+                    </Acordion>
+                    <Acordion title='Ușor de utilizat și de administrat'>Ai un angajat nou în firmă? Îi creezi utilizator în programul First ERP și devine productiv imediat după angajarea sa – fie că lucrează la vânzări, achiziții sau stocuri. First ERP este ușor de folosit de către oricine, cu o interfață simplă și clară. De administrarea utilizatorilor, de setarea drepturilor de acces în program și de crearea de noi puncte de lucru în aplicație te vei ocupa fără să ai nevoie de ajutorul nimănui.
+                    </Acordion>
+                    <Acordion title='Adio foi, agende și fișiere Excel împrăștiate peste tot. Bun venit, organizare!'>Zeci sau sute de ore pierde o firmă în fiecare lună atunci când este dependentă de utilizarea hârtiilor, a agendelor și mai ales a fișierelor interminabile în Excel. Plus că există riscul permanent de eroare. Prin utilizarea First ERP și prin digitalizarea activităților cheie din companie, vânzări, cumpărări, stocuri, contabilitate, hârtiile și fișierele Excel devin inutile. Absolut toate operațiunile efectuate de către angajați vor fi disponibile în aplicație, de unde extragi și rapoartele și analizele necesare controlului afacerii.
+                    </Acordion>
+                    <Acordion title='Lucru colaborativ în echipă'>First ERP, singura aplicație de business de care are nevoie o companie, reprezintă locul în care angajații din firmă își îndeplinesc o mare parte din task-urile zilnice. Utilizatorii comunică și colaborează intern folosind platforma First ERP, în care sunt conectați cu toții și care le oferă accesul la date comune despre firmă.
+                    </Acordion>
+                    <Acordion title='Funcționează imediat ce începi să îl folosești'>Pe domenii de activitate, ți-am pregătit fluxuri preconfigurate care să te ajute să începi utilizarea aplicației imediat după achiziționarea ei. Fără implementare, fără configurări complexe.
+                    </Acordion>
+                    <Acordion title='Orientat spre îndeplinirea obiectivelor firmei'>În First ERP ai la dispoziție rapoartele și tablourile de bord necesare pentru urmărirea îndeplinirii obiectivelor de afaceri. Ai atât date manageriale, cât și informații pentru fiecare angajat, cu ajutorul cărora să își monitorizeze fiecare rezultatele personale.
+                    </Acordion>
+                    <Acordion title='Funcționează online și nu necesită instalări de aplicații'>Laptop, telefon sau tabletă: orice dispozitiv ai la îndemână, accesezi First ERP printr-o conexiune 100% securitizată și ai acces la informații despre afacerea ta, disponibile în timp real.
+                    </Acordion>
+                </div>
                 
             </div>
             <div className = 'fifth'>

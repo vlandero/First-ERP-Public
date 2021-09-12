@@ -1,0 +1,27 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+footer {
+  display: flex;
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo-footer a img {
+  width: 30px;
+}
+.logo-footer a {
+  margin: 8px;
+}
+.logo-footer a :hover {
+  animation: rotation 2s infinite linear;
+}
