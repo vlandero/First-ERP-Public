@@ -8,8 +8,9 @@ function AcMenu({open,children}){
     )
 }
 
-export default function Acordion({children,title}) {
+export default function Acordion({children,title,first}) {
     const [open,setOpen] = useState(false)
+    
     return (
         <div className='acordion-element'>
             <div onClick={()=>setOpen(!open)} className='acordion-preview'>

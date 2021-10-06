@@ -2,10 +2,13 @@ import React, { useEffect,useState } from 'react'
 import './homepage.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+
 import RegisterButton from '../../../register-button'
 import dispozitive from '../../../photos/Picture1.jpg'
 import laptop from '../../../photos/Picture2.jpg'
 import portrait from '../../../photos/person.png'
+import second from './comp-cheie/poze/full_0.jpg'
+
 import ExtindereaVanzarilor from './comp-cheie/ExtindereaVanzarilor'
 import AchizitiiComenzi from './comp-cheie/AchizitiiComenzi'
 import PlatiIncasari from './comp-cheie/PlatiIncasari'
@@ -18,18 +21,18 @@ import Acordion from './acordion/template'
 
 export default function Homepage() {
     useEffect(()=>{
-        AOS.init({duration:2000})
+        AOS.init({duration:1000})
     })
-    const [active,setActive] = useState(0)
+    const [active,setActive] = useState(1)
     return (
-        <div style={{maxWidth:1200,marginLeft:'auto',marginRight:'auto'}}>
+        <div className='page-div'>
             <div className = 'first'>
                 <div className='first-header'>
                     <h1>Primul program ERP al afacerii tale</h1>
                     <p>Achiziții. Gestiune stocuri. Facturare. Logistică. Contabilitate. Service.Toate componentele cheie ale unei afaceri de succes se bazează pe First ERP.</p>
                 </div>
                 <div className='first-links'>
-                    <a href='#'>Beneficii First ERP</a>
+                    <a href='/avantaje'>Beneficii First ERP</a>
                     <div className='vl'></div>
                     <a href='#'>De la 10 euro / lună</a>
                 </div>
@@ -41,20 +44,21 @@ export default function Homepage() {
                     <h3>Da!</h3>
                     <p>First ERP vine cu funcționalități și fluxuri pre-configurate, ușor de folosit din prima. Astfel că elimini costurile și efortul de implementare ERP. Te conectezi în First ERP și începi să lucrezi imediat.</p>
                 </div>
+                <img src={second} className='second-right'></img>
                 
             </div>
             <div className='third'>
                 <h1>Utilizatorii iubesc First ERP</h1>
                 <div className='third-cifre'>
-                    <div className='third-comp'>
+                    <div data-aos='fade-right' className='third-comp'>
                         <h4>624</h4>
                         <p>De ore pe an puteți câștiga folosind First ERP</p>
                     </div>
-                    <div className='third-comp'>
+                    <div data-aos='fade-up' className='third-comp'>
                         <h4>38.000</h4>
                         <p>Utilizatori folosesc programele noastre software în România</p>
                     </div>
-                    <div className='third-comp'>
+                    <div data-aos='fade-left' className='third-comp'>
                         <h4>30</h4>
                         <p>De zile este valabil contul gratuit First ERP</p>
                     </div>
@@ -116,7 +120,11 @@ export default function Homepage() {
                     <Acordion title='Funcționează online și nu necesită instalări de aplicații'>Laptop, telefon sau tabletă: orice dispozitiv ai la îndemână, accesezi First ERP printr-o conexiune 100% securitizată și ai acces la informații despre afacerea ta, disponibile în timp real.
                     </Acordion>
                 </div>
-                
+            </div>
+            <div className='seventh'>
+                <h2>Începi utilizarea First ERP în firma ta</h2>
+                <h4>Creează-ți contul gratuit valabil 30 de zile</h4>
+                <p style={{marginLeft:20}}>Pentru prețuri, alege-ți varianta de First ERP care ți se potrivește. Pentru a descoperi funcționalitățile enumerate mai jos ai la dispoziție 30 de zile de cont gratuit.</p>
             </div>
             <div className = 'fifth'>
                 <div className = 'rnm'>
