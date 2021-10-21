@@ -1,0 +1,198 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(185, 255, 171, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  padding: 25px;
+  width: 80%;
+  max-width: 1000px;
+  max-height: 90%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: auto;
+}
+.closeButton {
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 30px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px dashed black;
+}
+.labels {
+  margin-right: 10px;
+}
+.form {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-label-div input {
+  width: 15rem;
+  height: 1.4rem;
+}
+.form input {
+  width: 15rem;
+  height: 1.4rem;
+}
+.Cui {
+  margin-bottom: 20px;
+}
+.logo-form {
+  width: 30px;
+}
+.modal-title {
+  margin: 0;
+  font-size: 48px;
+}
+.modal-form-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.buttons-div {
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  width: 50vw;
+  margin-top: 50px;
+}
+.nav-button {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: rgb(0, 140, 255);
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 0.7rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-color: #05ee8d;
+  color: black;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #003cff 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(45deg, #003cff 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+.nav-button:hover {
+  color: #fff;
+  outline: 0;
+  background-position: 0;
+}
+
+.cui-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cui-button {
+  display: block;
+  align-self: center;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.cui-button span {
+  position: relative;
+  z-index: 2;
+}
+
+.cui-button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #3aac05;
+  transition: all 0.35s;
+}
+
+.cui-button:hover {
+  color: #fff;
+}
+
+.cui-button:hover:after {
+  width: 100%;
+}
+
+.DateFirma {
+  margin-bottom: 4px;
+}
+
+#atributfiscal {
+  margin: 0;
+}
+@media screen and (min-width: 700px) {
+  .nav-button {
+    font-size: 1rem;
+  }
+  .buttons-div {
+    min-width: 300px;
+  }
+}
+@media screen and (min-width: 940px) {
+  .form {
+    margin-bottom: 50px;
+  }
+}
